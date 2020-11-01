@@ -10,5 +10,6 @@ export class SingUpController implements Controller {
         return badRequest(new MissingParamError(field))
       }
     }
+    return badRequest(new Error())
   }
 }
